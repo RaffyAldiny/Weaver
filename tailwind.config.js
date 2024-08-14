@@ -7,6 +7,10 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['Lora', 'serif'], // Apply Lora as your default font
+        serif: ['Playfair Display', 'serif'], // Apply Playfair Display as an alternative font
+      },
       colors: {
         palePurple: '#E5D4ED',
         mediumSlateBlue: '#6D72C3',
