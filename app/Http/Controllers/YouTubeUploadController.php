@@ -85,7 +85,7 @@ class YouTubeUploadController extends Controller
         $snippet->setCategoryId('22'); // Example: Category 22 is for People & Blogs
 
         $status = new Google_Service_YouTube_VideoStatus();
-        $status->setPrivacyStatus('public'); // Options: 'public', 'private', 'unlisteds'
+        $status->setPrivacyStatus('public'); // Options: 'public', 'private', 'unlisted'
 
         // Mark the video as a YouTube Short
         if ($request->input('is_short')) {
