@@ -2,10 +2,15 @@
 
 namespace App\Http\Controllers;
 
-use Google_Client;
-use Google_Service_YouTube;
+
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
+use Google_Client;
+use Google_Service_YouTube;
+use Google_Http_MediaFileUpload;
+use Google_Service_YouTube_Video;
+use Google_Service_YouTube_VideoSnippet;
+use Google_Service_YouTube_VideoStatus;
 
 class YouTubeUploadController extends Controller
 {
